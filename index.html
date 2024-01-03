@@ -1,131 +1,142 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-</head>
-<body>
+
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="#">
-                <!-- Logo -->
-                <img src="./images/logo.svg" alt="logo" />
-            </a>
-            <ul>
-                <li><a href="#" target="_blank">Франшиза</a></li>
-                <li><a href="#" target="_blank">Нашi традицii</a></li>
-                <li><a href="#" target="_blank">Формати</a></li>
-                <li><a href="#" target="_blank">Контакти</a></li>
-            </ul>
-        </nav>
-        <!-- Order a call -->
-        <button type="button">Замовити дзвiнок</button>
+      <nav>
+        <!-- "/" The same as "./index.html" -->
+        <a href="/">
+          <!-- Logo -->
+          <img src="./images/logo.svg" alt="logo" />
+        </a>
+        <ul>
+          <li><a class="link" href="#traditions-section">Нашi традицii</a></li>
+          <li><a class="link" href="#chefs-section">Шеф-кухарi</a></li>
+          <li><a class="link" href="#formats-section">Формати</a></li>
+          <li><a class="link" href="#contact-section">Контакти</a></li>
+        </ul>
+      </nav>
+      <!-- Order a call -->
+      <button class="button" type="button">Замовити дзвiнок</button>
     </header>
     <main>
-        <section>
-            <h1>Сучасна пекарня</h1>
-            <ul>
-                <li>Великий попит на ринку</li>
-                <li>Достпнi Формати</li>
-                <li>Досвiдченна команда</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Новий формат трдицiй</h2>
-            <p>
-                <span>Shop balbery</span> - це пекарня.
-            </p>
-            <p>
-                Ми працюемо. <span>5 хвилин i замовлення готове!</span>
-            </p>
-            <img src="./images/rider.jpg" alt="Чоловiк пекар" />
-        </section>
-        <section>
-            <h2>Нашi найкращi шеф-кухарi</h2>
-            <ul>
-                <li>
-                    <article>
-                    <h3>Настя</h3>
-                    <p>Привiт!</p>
-                    <p>Це я.</p>
-                    <p>Це те, чим я займаюсь.</p>
-                    </article>
-                </li>
-                <li>   
-                    <article>
-                        <h3>Влад</h3>
-                        <p>Привiт!</p>
-                        <p>Це я.</p>
-                        <p>Це те, чим я займаюсь.</p>
-                    </article>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Формати</h2>
-            <ul>
-                <li>
-                    <article>
-                        <h3 lang="en">Walrus</h3>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3 lang="en">Horseshoe</h3>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3 lang="en">Handlebar</h3>
-                    </article>
-                </li>
-            </ul>
-        </section>
+      <section>
+        <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
+        <ul class="advantages-list">
+          <li>Великий попит на ринку</li>
+          <li>Достпнi Формати</li>
+          <li>Досвiдченна команда</li>
+        </ul>
+      </section>
+      <section id="traditions-section">
+        <h2 class="section-title">Новий формат трдицiй</h2>
+        <p><span>Shop balbery</span> - це пекарня.</p>
+        <p>Ми працюемо. <span>5 хвилин i замовлення готове!</span></p>
+        <img src="./images/rider.jpg" alt="Чоловiк пекар" />
+      </section>
+      <section id="chefs-section">
+        <h2 class="section-title">Нашi найкращi <span class="accent">шеф-кухарi</span></h2>
+        <ul>
+          <li>
+            <article>
+              <h3>Настя</h3>
+              <p>Привiт!</p>
+              <p>Це я.</p>
+              <p>Це те, чим я займаюсь.</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Влад</h3>
+              <p>Привiт!</p>
+              <p>Це я.</p>
+              <p>Це те, чим я займаюсь.</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section id="formats-section">
+        <h2 class="section-title">Формати</h2>
+        <ul>
+          <li>
+            <article>
+              <h3 lang="en">Walrus</h3>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3 lang="en">Horseshoe</h3>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3 lang="en">Handlebar</h3>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section id="contact-section">
+        <h2 class="section-title">Приеднуйся!</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55828.347671179356!2d7.655157501640184!3d45.04715514759381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886cf404efeeef%3A0xb646cae45c7a521b!2sParco%20della%20Tesoriera!5e0!3m2!1sru!2sit!4v1704149236010!5m2!1sru!2sit"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
     </main>
     <footer>
-        <nav>
+      <nav>
+        <a href="#">
+          <!-- Logo -->
+          <img src="./images/logo.svg" alt="logo" />
+        </a>
+        <!-- logo and menu -->
+        <ul>
+          <li><a class="link" href="#traditions-section">Нашi традицii</a></li>
+          <li><a class="link" href="#chefs-section">Шеф-кухарi</a></li>
+          <li><a class="link" href="#formats-section">Формати</a></li>
+          <li><a class="link" href="#contact-section">Контакти</a></li>
+        </ul>
+      </nav>
+      <address>
+        <ul>
+          <li>
+            <a href="tel:+380966666666">+38 666 666</a>
+          </li>
+          <li>
+            <a href="mailto:someemail@gmail.com">someemail@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://maps.app.goo.gl/Zf613wSU8yWaJbrx6" target="_blank"
+              >Украiна, Киев, вул. Строiтелей 10</a
+            >
+          </li>
+          <li>
             <a href="#">
-                <!-- Logo -->
-                <img src="./images/logo.svg" alt="logo" />
+              <!-- Facebook icon -->
             </a>
-            <!-- logo and menu -->
-            <ul>
-                <li><a href="#" target="_blank">Франшиза</a></li>
-                <li><a href="#" target="_blank">Нашi традицii</a></li>
-                <li><a href="#" target="_blank">Формати</a></li>
-                <li><a href="#" target="_blank">Контакти</a></li>
-            </ul>
-        </nav>
-        <address>
-            <ul>
-                <li>
-                    <a href="tel:+386666666">+38 666 666</a>
-                </li>
-                <li>
-                    <a href="mailto:someemail@gmail.com">someemail@gmail.com</a>
-                </li>
-                <li>
-                    <a href="https://maps.app.goo.gl/Zf613wSU8yWaJbrx6" target="_blank">Украiна, Киев, вул. Строiтелей 10</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <!-- Facebook icon -->
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <!-- Instagram icon -->
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        Полiтика конфиденцiйностi
-                    </a>
-                    <p>@ 2022 Даннi захищенi</p>
-                </li>
-            </ul>
-        </address>
+          </li>
+          <li>
+            <a href="#">
+              <!-- Instagram icon -->
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Полiтика конфиденцiйностi</a>
+            <p>&copy; 2022 Даннi захищенi</p>
+          </li>
+        </ul>
+      </address>
     </footer>
-</body>
+  </body>
 </html>
